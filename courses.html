@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <title>E-learn</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <div class="logocontainer"><a class="navbar-brand" href="index.html"><img
+                        src="./Images/logo-removebg-preview.png" class="w-100" alt=""></a></div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mt-1 mb-2 mb-lg-0 mx-2">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="teachers.html">Teachers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact us</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-primary" type="submit">Search</button>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-danger mx-2" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop">
+                        Login
+                    </button>
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop1">
+                        Register
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" required>
+                            <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" required>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal2 -->
+    <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title fw-bold" id="staticBackdropLabel">Register</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                required>
+                            <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" required>
+                            <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" required>
+                        </div>
+                        <!-- <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div> -->
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="topbg p-5 mb-4 mb-lg-0">
+        <div class="ms-lg-5 ps-lg-5">
+            <h1 class="fw-bolder title">Our Courses</h1>
+            <div class="d-inline-flex align-items-center btns">
+                <a href="index.html" class="text-light text-decoration-none fs-5 p-2 ps-3"><i class="fa-solid fa-house fs-6"></i> Home</a>
+                <a class="text-light text-decoration-none fs-5 p-2 pe-3">/ Our Courses</a>
+            </div>
+        </div>
+    </div>
+    <h2 class="text-center mt-5 text-danger fw-bolder courseHeading">Our Desiging Courses</h2>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5 mx-lg-5 px-lg-5 mx-2 my-2">
+        <div class="col">
+            <div class="card h-100 courseCard">
+                <img src="./Images/html.png" class="card-img-top mx-auto mt-3 h-25 w-25" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center fw-bold fs-4">HTML</h5>
+                    <p class="card-text txtcenter mx-2">HTML stands for Hyper Text Markup Language. HTML is the standard
+                        markup language for Web pages.</p>
+                    <div class="mx-4">
+                        <a href="htmlCourse.html"><button class="btn btn-outline-danger ms-5 ">Learn HTML</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 courseCard">
+                <img src="./Images/css.png" class="card-img-top mx-auto mt-3 h-25 w-25" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center fw-bold fs-4">CSS</h5>
+                    <p class="card-text  txtcenter mx-2">CSS stands for Cascading Style Sheets. CSS describes how HTML
+                        elements are to be displayed on screen.</p>
+                    <div class="mx-4">
+                        <a href="cssCourse.html"><button class="btn btn-outline-danger ms-5 ">Learn CSS</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col mx-md-auto">
+            <div class="card h-100 courseCard">
+                <img src="./Images/js.png" class="card-img-top mx-auto mt-3 h-25 w-25" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center fw-bold fs-4">JavaScript</h5>
+                    <p class="card-text  txtcenter mx-2">JavaScript is a scripting language that enables you to create
+                        dynamically updating content, control multimedia.</p>
+                    <div class="mx-4">
+                        <a href="javascript.html"><button class="btn btn-outline-danger ms-5 ">Learn
+                                JavaScript</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2 class="text-center mt-5 pt-lg-4 text-success fw-bolder courseHeading">Our Coding Courses</h2>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5 mx-lg-5 px-lg-5 mx-2 my-2 mb-5">
+        <div class="col">
+            <div class="card h-100 courseCard">
+                <img src="./Images/c.png" class="card-img-top mx-auto mt-3 h-25 w-25" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center fw-bold fs-4">C</h5>
+                    <p class="card-text txtcenter mx-2">C is the general-purpose programming language created by Dennis
+                        Ritchie at the Bell Laboratories in 1972.</p>
+                    <div class="mx-5">
+                        <a href="CLang.html"><button class="btn btn-outline-danger ms-5 ">Learn C</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 courseCard">
+                <img src="./Images/java.png" class="card-img-top mx-auto mt-3 h-25 w-25" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center fw-bold fs-4">Java</h5>
+                    <p class="card-text  txtcenter mx-2">Java is a popular programming language, created in 1995. It is
+                        owned by Oracle, and more than 3 billion devices run Java.</p>
+                    <div class="mx-4">
+                        <a href="javaCourse.html"><button class="btn btn-outline-danger ms-5 ">Learn java</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col mx-md-auto">
+            <div class="card h-100 courseCard">
+                <img src="./Images/python.png" class="card-img-top mx-auto mt-3 h-25 w-25" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center fw-bold fs-4">Python</h5>
+                    <p class="card-text  txtcenter mx-2">Python is a popular programming language. It was created by
+                        Guido van Rossum, and released in 1991.</p>
+                    <div class="mx-4">
+                        <a href="pythonCourse.html"><button class="btn btn-outline-danger ms-5">Learn
+                                Python</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-dark sticky-bottom">
+        <footer class="py-3">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="index.html" class="nav-link px-2 text-light">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link px-2 text-light">About</a></li>
+                <li class="nav-item"><a href="courses.html" class="nav-link px-2 text-light">Courses</a></li>
+                <li class="nav-item"><a href="teachers.html" class="nav-link px-2 text-light">Teachers</a></li>
+            </ul>
+            <p class="text-center text-light">© 2022 Company, <a href="https://upconn.in/"
+                    class="fw-bold text-light">UPCONN</a></p>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
